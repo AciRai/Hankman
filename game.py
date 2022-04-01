@@ -21,9 +21,9 @@ print(ots1, "Чтобы выйти из игры напишите - exit\n\nБо
 usedln = ""
 win = []
 # Список  #####################
-with open('/content/drive/MyDrive/ColabNotebooks/list/wordsgame.txt', 'r') as w:
+with open('wordsgame.txt', 'r') as w:
     for i in w:
-        openFile = open('/content/drive/MyDrive/ColabNotebooks/list/wordsgame.txt', 'r')
+        openFile = open(w)
         listFile = list(openFile)
         randomWord = random.choice(listFile)
 
