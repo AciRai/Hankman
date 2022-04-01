@@ -3,6 +3,7 @@ import threading
 import time
 import sys
 import os
+from game import game
 
 clear = lambda: os.system('clear')
 done = False
@@ -30,6 +31,6 @@ menu = input()
 
 if menu == "play":
     time.sleep(1)
-    os.system('python /content/drive/MyDrive/ColabNotebooks/game.py')
+    game()
 elif menu == "exit":
     clear()
